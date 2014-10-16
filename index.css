@@ -1,0 +1,59 @@
+body {
+	margin: 0px;
+	font-family: 'Lora', serif;
+}
+
+#header {
+	height: 5em;
+	background-color: #bdf;
+}
+
+#main {
+
+}
+
+.movie_container {
+	padding: 1em 2em 1em 1em;
+	background-color: #fff;
+	border-top: 1px solid #999;
+}
+
+.movie_title {
+	margin: 0px 0px .4em 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.8em;
+}
+
+.movie_info {
+	color: #666;
+}
+
+.genres {
+	display: block;
+}
+
+.shortdes {
+	display:none;
+}
+
+.theater_in_movie {
+	margin: 1.2em 0 .5em 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.theater_name {
+	margin: 0;
+	font-size: 1.4em;
+	font-weight: 200;
+}
+
+.theater_in_movie span {
+	font-family: 'Lora', serif;
+	font-size: 1em;
+	color: #777;
+}
+
+#footer {
+	height: 5em;
+	background-color: #bfdfff
+}
