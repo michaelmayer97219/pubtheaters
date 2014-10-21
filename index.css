@@ -4,31 +4,53 @@ body {
 }
 
 #header {
-	height: 5em;
+	height: 6em;
 	background-color: #bdf;
+}
+
+#options {
+	position: relative;
+	top: 50%;
+	height: 50%;
+	width: 100%;
+}
+
+#sortLabel {
+	width: 100%;
+	text-align: center;
+
+}
+
+.sortToggle {
+	display: inline-block;
+	width: 49%;
+	height: 50%;
+	margin: 0px;
+	text-align: center;
+	border: 1px solid #555;
 }
 
 #main {
 
 }
 
-.movie_container {
+.main_container {
 	padding: 1em 2em 1em 1em;
 	background-color: #fff;
 	border-top: 1px solid #999;
 }
 
-.movie_title {
+.main_title {
 	margin: 0px 0px .4em 0px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.8em;
 }
 
-.movie_info {
+.main_info {
 	color: #666;
 }
 
-.genres {
+.info {
 	display: block;
 }
 
@@ -36,18 +58,20 @@ body {
 	display:none;
 }
 
-.theater_in_movie {
+.secondary {
 	margin: 1.2em 0 .5em 0;
 	font-family: 'Open Sans', sans-serif;
+
 }
 
-.theater_name {
+.secondary_name {
 	margin: 0;
 	font-size: 1.4em;
-	font-weight: 200;
+	font-weight: 100;
+	color: #333;
 }
 
-.theater_in_movie span {
+.secondary span {
 	font-family: 'Lora', serif;
 	font-size: 1em;
 	color: #777;
