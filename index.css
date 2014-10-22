@@ -5,29 +5,47 @@ body {
 
 #header {
 	height: 6em;
-	background-color: #bdf;
+	background-color: #ace;
+		sbackground-color: #bdf;
 }
 
 #options {
 	position: relative;
-	top: 50%;
+	top: 60%;
 	height: 50%;
 	width: 100%;
+	background-color: #bdf;
+
 }
 
 #sortLabel {
-	width: 100%;
+	display: inline-block;
+	width: 20%;
 	text-align: center;
-
 }
 
 .sortToggle {
+	border: 1px solid #689;
 	display: inline-block;
-	width: 49%;
-	height: 50%;
-	margin: 0px;
+	width: 30%;
+	height: 60%;
+	margin: 2.5% 5%;
 	text-align: center;
-	border: 1px solid #555;
+	background-color: #9bd;
+	line-height: 160%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+}
+
+.sortToggle:hover {
+	
+	cursor: pointer;
+	background-color: #8ab;
+	color: white;
+}
+
+#byTheater {
+	margin-left: 0%
 }
 
 #main {
