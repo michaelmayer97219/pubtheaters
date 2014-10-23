@@ -1,12 +1,17 @@
 body {
 	margin: 0px;
-	font-family: 'Lora', serif;
+
 }
 
 #header {
 	height: 6em;
 	background-color: #ace;
 		sbackground-color: #bdf;
+}
+
+i {
+	font-size: 2em;
+	color: black;
 }
 
 #options {
@@ -29,10 +34,10 @@ body {
 	display: inline-block;
 	width: 30%;
 	height: 60%;
-	margin: 2.5% 5%;
+	margin: 0.6em 5%;
 	text-align: center;
 	background-color: #9bd;
-	line-height: 160%;
+	line-height: 180%;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 }
@@ -49,7 +54,7 @@ body {
 }
 
 #main {
-
+		font-family: 'Lora', serif;
 }
 
 .main_container {
@@ -98,4 +103,19 @@ body {
 #footer {
 	height: 5em;
 	background-color: #bfdfff
+}
+
+@media only screen and (min-width: 768px) {
+    #main {
+    	margin-left: 20%;
+    }
+
+    .sortToggle {
+    	width: 10em;
+    	margin-left: 1em;
+    	margin-right: 1em;
+    }
+    .main_container {
+    	width: 500px;
+    }
 }
