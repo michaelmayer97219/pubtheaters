@@ -130,7 +130,6 @@ function showtimes_by_theater(data, targetDiv) {
 				if (theatre_id == code) {
 					var title = val.title
 					var time = v.dateTime
-					console.log(time)
 					if (titles_used.indexOf(title) === -1) {
 						//content = content + "<div class='secondary'>"
 						content = content + "<h2 class='secondary_name'>"+val.title+"</h2>"
