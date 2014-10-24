@@ -32,7 +32,7 @@ $("document").ready(function() {
  
 	//callback for above api call
 
-	showtimes_by_theater(showtime_data,, $('#main'))
+	showtimes_by_theater(showtime_data, $('#main'))
 
 
 	//default view will be showtimes_by_theater
