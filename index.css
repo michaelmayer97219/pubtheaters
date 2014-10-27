@@ -28,7 +28,7 @@ body {
 }
 
 #board h4 {
-	display: none; 
+	display: none;
 }
 
 #options {
@@ -71,6 +71,7 @@ body {
 }
 
 #main {
+    	margin-top: -1px;
 		font-family: 'Lora', serif;
 }
 
@@ -118,19 +119,24 @@ font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #footer {
-	height: 5em;
+	height: 2em;
 	background-color: #bfdfff
+}
+
+#footer div {
+	position: absolute;
+	right: 5%;
+	line-height: 200%;
+}
+#footer a {
+	color: darkblue;
+
 }
 
 @media only screen and (min-width: 768px) {
 
-	#board h4 {
-		display: inline-block;
-		position: absolute;
-		right: 5%;
-		top: 2.5em;
-	}
     #main {
+
     	margin-left: 20%;
     }
 
@@ -141,5 +147,6 @@ font-family: 'Open Sans Condensed', sans-serif;
     }
     .main_container {
     	width: 500px;
+    	
     }
-}
+

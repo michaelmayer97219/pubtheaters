@@ -121,7 +121,7 @@ function showtimes_by_theater(data, targetDiv) {
 
 		//loop through theater data
 		$.each(data, function(index, val) {
-			
+
 			showtime_array = val.showtimes
 			//loop through showtime arrays
 			$.each(showtime_array, function(i, v) {
@@ -130,18 +130,22 @@ function showtimes_by_theater(data, targetDiv) {
 				if (theatre_id == code) {
 					var title = val.title
 					var time = v.dateTime
+					
 					if (titles_used.indexOf(title) === -1) {
+
 						//content = content + "<div class='secondary'>"
 						content = content + "<h2 class='secondary_name'>"+val.title+"</h2>"
 						content = content + time_to_span(time)
 					} else {
 						content = content + time_to_span(time)
 					}
+					
 					titles_used.push(title)
 				}
+
 				//content = content + "</div>" //close secondary div
 			})
-		
+
 		})
 		var content = content + "</div>" //cloase secondary
 		var content = content + "</div>" //cloase main_container

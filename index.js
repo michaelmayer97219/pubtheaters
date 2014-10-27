@@ -14,7 +14,7 @@ $("document").ready(function() {
 			showtimes_by_theater(showtime_data, $('#main'))
 
 		}
-
+/*
 	//get theater data
 	$.ajax({
         url: showtimesUrl,
@@ -28,11 +28,11 @@ $("document").ready(function() {
      }).fail(function(jqXHR, textStatus){
      	alert(textStatus)
      })
-
+*/
  
 	//callback for above api call
 
-	showtimes_by_theater(showtime_data, $('#main'))
+	showtimes_by_theater(theater_times, $('#main'))
 
 
 	//default view will be showtimes_by_theater
