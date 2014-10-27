@@ -9,9 +9,17 @@ $("document").ready(function() {
 	var today = d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
 
 	function handleCall(data) {
-			//dat = $.parseJSON(data)
-			showtime_data = data
-			showtimes_by_theater(showtime_data, $('#main'))
+			
+			showtimes_by_theater(data, $('#main'))
+			$('#byMovie').click(function() {
+				$('#main').html('')
+				showtimes_by_title(data, $('#main'))
+			})
+
+			$('#byTheater').click(function() {
+				$('#main').html('')
+				showtimes_by_theater(data, $('#main'))
+			})
 
 		}
 
@@ -29,24 +37,12 @@ $("document").ready(function() {
      	alert(textStatus)
      })
 
- 
-	//callback for above api call
-
-	showtimes_by_theater(theater_times, $('#main'))
 
 
 	//default view will be showtimes_by_theater
 	//showtimes_by_theater(APIdata, $('#main'))
 
-	$('#byMovie').click(function() {
-		$('#main').html('')
-		showtimes_by_title(showtime_data, $('#main'))
-	})
 
-	$('#byTheater').click(function() {
-		$('#main').html('')
-		showtimes_by_theater(showtime_data, $('#main'))
-	})
 
 });
 

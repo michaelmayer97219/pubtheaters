@@ -162,6 +162,7 @@ function showtimes_by_theater(data, targetDiv) {
 function showtimes_by_title(data, targetDiv) {
 	$.each(data, function (index, val) {
 		//Set variables
+		console.log('first '+data.length)
 		var title = val.title
 		var movie_object = val.showtimes
 		var image_url = val.preferredImage.uri
@@ -175,10 +176,16 @@ function showtimes_by_title(data, targetDiv) {
 		
 		//loop through genres and append to movie container
 
-		var content = content + "<span class='info'>Genre:"
-		$.each(genres, function(ind, val) {
-			content = content + "<span> "+val+" </span>"
+		
+
+		if (genres) { //check if genres exists
+			var content = content + "<span class='info'>Genre:"
+			$.each(genres, function(ind, val) {
+				console.log('sec '+genres.length)
+				content = content + "<span> "+val+" </span>"
 		})
+		}
+		
 		content = content + "</span>" //close genres
 
 		//Add MPAA
@@ -192,7 +199,9 @@ function showtimes_by_title(data, targetDiv) {
 		//array to hold theaternames to check for duplicate time		
 		var theaters_used = []
 		content = content + "<div class='secondary'>"
+		console.log('third '+movie_object.length)
 		$.each(movie_object, function(i, v) {
+			
 			var id = v.theatre.id
 			var theater_name = v.theatre.name
 			var isPub = theater_codes.indexOf(id) == -1
@@ -210,16 +219,15 @@ function showtimes_by_title(data, targetDiv) {
 				theaters_used.push(theater_name)
 			}
 		})
-		console.log(theaters_used)
-
-
 
 		var content = content + "</div>" // close theater_in_movie
 		var content = content +  "</div>" //cose movie_container
 
 		//append content if theater container isn't empty
+		
 		if (theaters_used.length > 0) {
 			targetDiv.append(content)	
-		}
+		} 
+		
 	})
 }
