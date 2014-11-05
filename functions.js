@@ -8,7 +8,6 @@ theater_codes = [
 	"243", //Mission
 	"3031", //living room	
 	"240", //Cinema 21
-	"2213", //academy 
 ]
 
 theater_code_objects = [
@@ -20,7 +19,6 @@ theater_code_objects = [
 	{"243": "Mission Theater"},
 	{"3031": "Living Room Theater"},
 	{"240": "Cinema 21"},
-	{"2213": "Academy Theater"}
 
 ]
 
@@ -66,12 +64,6 @@ theater_detail = [
 		"name":"Living Room Theater",
 		"address":"341 SW 10th Ave, Portland, OR 97205",
 		"phone": "(971) 222-2010"
-		}
-	},
-	{"2213":{
-		"name":"Academy Theater",
-		"address":"7818 SE Stark St, Portland, OR 97215",
-		"phone": "(503) 252-0500"
 		}
 	}
 ]
