@@ -2,7 +2,7 @@ $("document").ready(function() {
 
 	//url construction
 	var apikey = "9sw7r52pft7rgry8y6whknv5";
-	var baseUrl = "https://data.tmsapi.com/v1";
+	var baseUrl = "https://data.tmsapi.com/v2";
 	var showtimesUrl = baseUrl + '/movies/showings';
 	var zipCode = "97201"
 	var d = new Date();
@@ -34,7 +34,7 @@ $("document").ready(function() {
 		success: handleCall,
      
      }).fail(function(jqXHR, textStatus){
-     	alert(textStatus)
+     	$('#main').html("<h1 style='height:1000px; font-size:1.3em'>Sorry, it appears we've hit our rate limit for today :'(</h1>")
      })
 
 
