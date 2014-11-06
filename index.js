@@ -2,7 +2,7 @@ $("document").ready(function() {
 
 	//url construction
 	var apikey = "9sw7r52pft7rgry8y6whknv5";
-	var baseUrl = "https://data.tmsapi.com/v2";
+	var baseUrl = "https://data.tmsapi.com/v1";
 	var showtimesUrl = baseUrl + '/movies/showings';
 	var zipCode = "97201"
 	var d = new Date();
